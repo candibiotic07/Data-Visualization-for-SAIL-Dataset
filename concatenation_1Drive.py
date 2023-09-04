@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np 
+# as some csv files are curropted I have not used them.
+
 
 #reading csv files for 1st hour
 df1=pd.read_csv("ALL000_2021-11-02_00.04.32.csv")
@@ -279,7 +281,7 @@ df32=pd.read_csv('ALL103_2021-11-02_08.39.33.csv')
 df33=pd.read_csv('ALL104_2021-11-02_08.44.33.csv')
 df34=pd.read_csv('ALL105_2021-11-02_08.49.33.csv')
 df35=pd.read_csv('ALL106_2021-11-02_08.54.33.csv')
-df36=pd.read_csv('ALL107_2021-11-02_08.59.33.csv')
+# df36=pd.read_csv('ALL107_2021-11-02_08.59.33.csv')
 
 
 
@@ -327,10 +329,10 @@ df32=selectedcolumns(df32)
 df33=selectedcolumns(df33)
 df34=selectedcolumns(df34)
 df35=selectedcolumns(df35)
-df36=selectedcolumns(df36)
+# df36=selectedcolumns(df36)
 
 
-merged_df1 = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13,df14,df15,df16,df17,df18,df19,df20,df21,df22,df23,df24,df25,df26,df27,df28,df29,df30,df31,df32,df33,df34,df35,df36], axis=0)
+merged_df1 = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13,df14,df15,df16,df17,df18,df19,df20,df21,df22,df23,df24,df25,df26,df27,df28,df29,df30,df31,df32,df33,df34,df35], axis=0)
 
 merged_df1.describe()
 
@@ -359,9 +361,9 @@ merged_df1.dtypes
 
 
 #reading csv files for 1st hour
-df1=pd.read_csv("ALL108_2021-11-02_09.04.33.csv")
-df2=pd.read_csv("ALL109_2021-11-02_09.09.33.csv")
-df3=pd.read_csv("ALL110_2021-11-02_09.14.33.csv")
+# df1=pd.read_csv("ALL108_2021-11-02_09.04.33.csv")
+# df2=pd.read_csv("ALL109_2021-11-02_09.09.33.csv")
+# df3=pd.read_csv("ALL110_2021-11-02_09.14.33.csv")
 df4=pd.read_csv('ALL111_2021-11-02_09.19.33.csv')
 df5=pd.read_csv('ALL112_2021-11-02_09.24.33.csv')
 df6=pd.read_csv('ALL113_2021-11-02_09.29.33.csv')
@@ -409,9 +411,9 @@ def selectedcolumns(data):
     data = data[['time','1D_SPD_REF','1D_SPD_FBK','1D_ARM_CUR','1D_ARM_VOLT','Billet Temp. D strand','Billet Temp. ALL strnd','1D_D_OK(NC contact)','1D_DCCB_ON','1D_RUN(NC contact)','1D_TRIP']]
     return data
 
-df1=selectedcolumns(df1)
-df2=selectedcolumns(df2)
-df3=selectedcolumns(df3)
+# df1=selectedcolumns(df1)
+# df2=selectedcolumns(df2)
+# df3=selectedcolumns(df3)
 df4=selectedcolumns(df4)
 df5=selectedcolumns(df5)
 df6=selectedcolumns(df6)
@@ -449,7 +451,7 @@ df35=selectedcolumns(df35)
 df36=selectedcolumns(df36)
 
 
-merged_df1 = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9, df10, df11, df12, df13,df14,df15,df16,df17,df18,df19,df20,df21,df22,df23,df24,df25,df26,df27,df28,df29,df30,df31,df32,df33,df34,df35,df36], axis=0)
+merged_df1 = pd.concat([ df4, df5, df6, df7, df8, df9, df10, df11, df12, df13,df14,df15,df16,df17,df18,df19,df20,df21,df22,df23,df24,df25,df26,df27,df28,df29,df30,df31,df32,df33,df34,df35,df36], axis=0)
 
 merged_df1.describe()
 
