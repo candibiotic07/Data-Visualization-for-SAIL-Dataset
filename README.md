@@ -6,3 +6,5 @@ The project consists of python scripts generated for concatenation, analysis(plo
  2-Plot all the concatenated files using the plot python scripts.
  3-Anomaly detection using Isolation Forest in the anomaly python scripts.
  4-If you want the anomalies in terms of intervals then use the anomaly_interval python script.
+This file also contains two docs which contain the plots for all the HMD and 1_Drive parameters.
+This file also contains two csv files which contain all the timestamps of the anomalies.
